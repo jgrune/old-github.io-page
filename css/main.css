@@ -141,22 +141,24 @@ footer {
 	border-radius: 100px;
 	border: 5px solid white;
 	filter: blur(5px) brightness(1);
+	opacity: 0.5;
 }
 
 .pagename:hover {
 	filter: blur(0px) brightness(1);
+	 opacity: 1.0;
 }
 
 /*transform effects*/
 
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
     main {
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	flex: 1;
@@ -172,4 +174,5 @@ footer {
 
 .pagename {
 		filter: blur(0px) brightness(1);
+		 opacity: 1.0;
     }
