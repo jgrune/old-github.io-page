@@ -1,0 +1,175 @@
+body{
+	font-family: 'Share Tech', sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	min-height: 100vh;
+	margin:0px auto;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: none;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(10,10,10, 0.2);
+	height: 100%;
+	width: 100%;
+		
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+#row1 {
+	display: flex;
+}
+
+#row2 {
+	display: flex;
+}
+
+footer {
+	background-color: rgba(10,10,10, 0.2);
+	height: 50px;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: none;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#footerdiv{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: none;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+}
+
+.social-media-img {
+	height: 40px;
+	width: 40px;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+#aboutme{
+	background: url("../images/san-francisco.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#work{
+	background: url("../images/new-york.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#websites{
+	background: url("../images/london.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#contact{
+	background: url("../images/napa.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#lorem{
+	background: url("../images/sonoma.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+#lorem2{
+	background: url("../images/san-francisco-2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.pagename {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 5px solid white;
+	filter: blur(5px) brightness(1);
+}
+
+.pagename:hover {
+	filter: blur(0px) brightness(1);
+}
+
+/*transform effects*/
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    main {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+#row1 {
+	flex-direction: column;
+}
+
+#row2 {
+	flex-direction: column;
+}
+
+.pagename {
+		filter: blur(0px) brightness(1);
+    }
